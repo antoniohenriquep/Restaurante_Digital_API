@@ -41,7 +41,7 @@ router.get('/teste',(req:Request, res:Response)=>{
 //Users Routes
 router.post('/users', new CreateUserController().handle)
 router.post('/login', new AuthUserController().handle)
-router.get('/profile',isAuthenticated, new DetailUserController().handle)
+router.get('/profile',isAuthenticated, new Detai`lUserController().handle)
 
 //Categories Routes
 router.post('/category',isAuthenticated, new CreateCategoryController().handle)
